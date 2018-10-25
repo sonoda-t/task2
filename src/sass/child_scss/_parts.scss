@@ -1,0 +1,107 @@
+.sliderBnr{
+    padding: 20px 0 40px;
+    position: relative;
+    text-align: center;
+    .sliderBnr_inner{
+        margin: 0;
+        position: relative;
+        padding: 0;
+    }
+    .slick-slide{
+        padding: 0 5px;
+        outline: none;
+        img{
+            transition-duration:0.1s;
+        }
+        &:not(.slick-current){
+            img{
+                opacity: 0.5;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .slider-prev,
+    .slider-next{
+        position: absolute;
+        top:50%;
+        margin-top:-20px;
+        z-index: +1;
+        img{
+            width: 20px;
+            height: 40px;
+        }
+        a{
+            display: block;
+        }
+    }
+    .slider-prev{
+        left: 0;
+    }
+    .slider-next{
+        right: 0;
+    }
+}
+.home .sliderBnr{
+    border-top:#ccc solid 1px;
+}
+@media (min-width:768px) {
+    .sliderBnr{
+        @include animation(opacity 1s ease-out 1s);
+        padding: 20px 0 40px;
+        .sliderBnr_inner{
+            margin: 0 auto;
+            position: relative;
+            padding: 0;
+            max-width: 1366px;
+            overflow: visible;
+        }
+        .slick-slide{
+            padding: 0 20px;
+        }
+        .slider-prev,
+        .slider-next{
+            top:50%;
+            margin-top:-35px;
+            img{
+                width: 30px;
+                height: 70px;
+            }
+        }
+        .slider-prev{
+            left: 20px;
+        }
+        .slider-next{
+            right: 20px;
+        }
+    }
+    .slick-list{
+        overflow: visible !important;
+    }
+}
+
+.slick-current{
+    a:hover img{
+        opacity:0.6;
+    }
+}
+
+.slick-dots{
+    bottom: 5px;
+    z-index: 5000;
+    @media (min-width:769px) {
+        bottom:20px;
+        left: 50%;
+        @include transform(translate(-50%, 0));
+        display: inline-block !important;
+        width: auto;
+    }
+}
+.slick-dots li button:before{
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.4;
+}
+.slick-dots li.slick-active button:before { color: #fff; opacity: 1; }

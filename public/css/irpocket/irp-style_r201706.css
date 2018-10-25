@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+
+/*コーポレートトップ*/
+.irp-press-list .irp-fsize {display:block}
+
+#irp-press-top li { padding:}
+#irp-press-top li:after { content:""; clear:both; display:block;}
+#irp-press-top .date { display:inline-block;margin-bottom: 5px;padding: 1em 0 1em 2em; float:left; width:240px;font-size: 1.4rem;}
+#irp-press-top .txt { padding: 1em 0;display: inline-block;max-width: 50em;}
+#irp-press-top a { display:inline; font-weight:500; padding-right:10px;}
+#irp-press-top .irp-cate:after { content:"";font-size: 1.1rem;line-height: 1;top: -5px;width: 95px;padding: 3px 0;text-align: center;color: #fff;display: inline-block; vertical-align:middle;}
+.content_wrap .ir .date:after {content: "IR情報"; background-color: rgb(86, 173, 122);color: rgb(255, 255, 255);font-size: 84%;line-height: 20px;   text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .press .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .press0 .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .tanshin .date:after {content: "決算短信"; background-color: rgb(217, 57, 113); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .press2 .date:after {content: "プレスリリース"; background-color: rgb(217, 114, 44); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .yuho .date:after {content: "IR情報"; background-color: rgb(86, 173, 122); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .oshirase .date:after {content: "お知らせ"; background-color: rgb(44, 124, 217); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .sonota .date:after {content: "その他"; background-color: rgb(146, 146, 146); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .irp-fsize.pdf { background-image:url(//irpocket.com/6544/images/icon_pdf.png); background-repeat:no-repeat; background-position:left 3px; display:inline}
+.new-label:after { background-color:#c7000a; color:#fff; content:"NEW";padding: 0.1em 0.5em;font-size:82%; display:inline-block;vertical-align: top;float: right;
+    margin-left: 10px;}
+
+span.txt.irp-url { height: inherit; width: inherit !important;}
+
+#irp-press-top li .txt .irp-fsize.pdf, #irp-press-topir li .txt .irp-fsize.pdf, #irp-press-prnews li .txt .irp-fsize.pdf, #irp-press-other li .txt .irp-fsize.pdf {background-position:left 3px !important}
+
+#irp-irnews-list li .txt .irp-fsize.pdf, #irp-irnews-archive li .txt .irp-fsize.pdf, #irp-prnews-list li .txt .irp-fsize.pdf, #irp-prnews-archive li .txt .irp-fsize.pdf, #irp-other-list li .txt .irp-fsize.pdf, #irp-other-archive li .txt .irp-fsize.pdf {background-position:left 3px !important}
+
+
+
+@media (max-width: 767px) {
+	#irp-press-top .date { display:block;margin-bottom: 5px;padding: 1em 0 1em 0em; float:none; width:inherit;font-size: 1.0rem;}
+	#irp-press-top .txt { padding: 0 0;}
+    #irp-press-top a { padding-top:0; font-weight:normal}
+#tab li {font-size:12px !important}
+#irp-press-top .new-label, #irp-press-topir .new-label, #irp-press-prnews .new-label, #irp-press-other .new-label {
+    display: block;
+}
+#irp-press-top .new-label:after, #irp-press-topir .new-label:after, #irp-press-prnews .new-label:after, #irp-press-other .new-label:after  {float:none !important ;margin-left:0 !important}
+#irp-press-top li .txt .irp-fsize.pdf, #irp-press-topir li .txt .irp-fsize.pdf, #irp-press-prnews li .txt .irp-fsize.pdf, #irp-press-other li .txt .irp-fsize.pdf {background-position:left 3px !important}
+.page_index .sec01 ul li .txt { padding-right:10px !important}
+
+
+}
+
+
+
+
+
+
+/*IRトップ*/
+#irp-press-irtop .date { display:block;margin-bottom: 5px;}
+#irp-press-irtop .irp-cate:after { content:"";font-size: 1.1rem;line-height: 1;top: -5px;width: 95px;padding: 3px 0;text-align: center;color: #fff;display: inline-block; vertical-align:middle;}
+#irp-press-irtop .press .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .press0 .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .ir .date:after {content: "IR情報"; background-color: rgb(86, 173, 122);color: rgb(255, 255, 255);font-size: 84%;line-height: 20px;   text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .tanshin .date:after {content: "決算短信"; background-color: rgb(217, 57, 113); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .yuho .date:after {content: "IR情報"; background-color: rgb(86, 173, 122); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .press2 .date:after {content: "プレスリリース"; background-color: rgb(217, 114, 44); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .oshirase .date:after {content: "お知らせ"; background-color: rgb(44, 124, 217); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-irtop .sonota .date:after {content: "その他"; background-color: rgb(146, 146, 146); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+li .txt .irp-fsize.pdf { width:inherit; background-repeat:no-repeat;height: inherit;padding-left: 25px;background-position: left 7px;vertical-align: top;}
+
+#irp-press-irtop .txt.irp-pdf { width:inherit}
+#irp-press-irtop .new-label:after { background-color:#c7000a; color:#fff; content:"NEW";padding: 0.1em 0.5em;font-size:82%; display:inline-block;vertical-align: top;float: right;line-height: 1.5em; margin-left: 10px;margin-top: 6px;margin-right: 10px;}
+@media (max-width: 767px) {
+.page_index .sec01 ul#irp-press-irtop li .date { float:none}
+ul#irp-press-irtop li .txt { margin-left:0 !important}
+#irp-press-irtop .new-label:after { margin-top:0;}
+}
+
+/*IRニュース*/
+#irp-press-list .date, #irp-press-archive .date { display:block;margin-bottom: 5px;}
+#irp-press-list .date.press:after, #irp-press-archive .date.press:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.press0:after, #irp-press-archive .date0.press:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.ir:after, #irp-press-archive .date.ir:after {content: "IR情報"; background-color: rgb(86, 173, 122);color: rgb(255, 255, 255);font-size: 84%;line-height: 20px;   text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.tanshin:after, #irp-press-archive .date.tanshin:after {content: "決算短信"; background-color: rgb(217, 57, 113); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.yuho:after, #irp-press-archive .date.yuho:after {content: "IR情報"; background-color: rgb(86, 173, 122); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.press2:after, #irp-press-archive .date.press2:after {content: "プレスリリース"; background-color: rgb(217, 114, 44); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.oshirase:after, #irp-press-archive .date.oshirase:after {content: "お知らせ"; background-color: rgb(44, 124, 217); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+#irp-press-list .date.sonota:after, #irp-press-archive .date.sonota:after {content: "その他"; background-color: rgb(146, 146, 146); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+li .txt .irp-fsize.pdf { width:inherit; background-repeat:no-repeat;height: inherit;padding-left: 25px;background-position: left 7px;vertical-align: top;}
+#irp-press-list .pdf, #irp-press-archive .pdf { background:none; vertical-align:top; height:inherit; width:inherit !important}
+#irp-press-list .irp-fsize.pdf, #irp-press-archive .irp-fsize.pdf { background-image:url(//irpocket.com/6544/images/icon_pdf.png); background-repeat:no-repeat; background-position:left 3px; display:inline}
+#irp-press-list .new-label:after, #irp-press-archive .new-label:after  { background-color:#c7000a; color:#fff; content:"NEW";padding: 0.1em 0.5em;font-size:82%; display:inline-block;vertical-align: top;float: right;line-height: 1.5em; margin-left: 10px;margin-top: 6px;}
+
+#irp-press-list span.txt.url,
+#irp-press-archive span.txt.url { height: inherit; width: inherit !important;}
+
+@media (max-width: 767px) {
+.page_index .sec01 ul#irp-press-list li .date { float:none}
+ul#irp-press-list li .txt { margin-left:0 !important}
+#irp-press-list .new-label:after { margin-top: 0px;}
+}
+
+
+#irp-press-navi { border:none}
+#irp-press-navi li { display:inline-block; border:none; width:10%}
+#irp-press-navi li a { display:inline-block; width:100%; text-align:center;padding: 10px 0; background-color: #777;color: #fff; border-right: 1px solid #fff;}
+#irp-press-navi li.selected a {background-color: #092B65}
+
+#irp-press-title { font-size: 24px;font-weight: bold; padding: 20px 0; margin-top: 20px; }
+
+
+
+
+@media (max-width: 767px) {
+#irp-press-title { font-size: 18px;margin-left: 20px; }
+#irp-press-navi li {width:25%;    padding-left: 0;}
+#irp-press-navi li:nth-child(odd) { background-color:inherit !important}
+}
+
+
+
+
+
+
+/*ハイライト*/
+
+
+#irp-highlight-table-cfeigyo .ot.q2, #irp-highlight-table-cftoshi .ot.q2, #irp-highlight-table-cfzaimu .ot.q2 {display:none}
+
+
+
+#irp-highlight-table-soshisan tr.ot, #irp-highlight-table-junshisan tr.ot, #irp-highlight-table-jiko tr.ot { display:none}
+#irp-highlight-table-soshisan tr:first-child th, #irp-highlight-table-junshisan tr:first-child th, #irp-highlight-table-jiko tr:first-child th { background: #DBE7ED;font-size: 12px;}
+
+.finance_wrap section table th.yn {
+    background: #DBE7ED;
+    font-size: 12px;
+}
+
+
+
+
+/*ライブラリ*/
+#irp-library-category  { text-align:left}
+#irp-library-category h2  {font-size: 24px;font-weight: bold; margin: 40px 0 20px;}
+#irp-library-category dl { border-bottom:1px solid #B3B3B3; padding:15px 0}
+#irp-library-category dt.irp-date { float:left; width:120px;}
+#irp-library-category dd {display: inline-block; width: 85%;}
+#irp-library-category dd a { float:none; color: #092b65;text-decoration: none; padding-right: 0; vertical-align:top; background-image:inherit;    margin-right: 10px;}
+#irp-library-category .irp-icon-pdf .irp-fsize { background-image:url(//irpocket.com/6544/images/icon_pdf.png); background-repeat:no-repeat; background-position:left 3px;padding-left: 20px;}
+
+
+
+@media (max-width: 767px) {
+	#irp-library-category dl {padding: 15px 15px;}
+
+}
+
+
+
+/*カレンダー*/
+#irp-calendar-list  { text-align:left}
+#irp-calendar-list h2  {font-size: 24px;font-weight: bold; margin: 40px 0 20px;}
+#irp-calendar-list dl { border-bottom:1px solid #B3B3B3; padding:15px 0}
+#irp-calendar-list dt.irp-calendar-date { float:left; width:120px;}
+#irp-calendar-list dd {display: inline-block; width: 85%;}
+#irp-calendar-list dd a { float:none; color: #092b65;text-decoration: none; padding-right: 0; vertical-align:top; background-image:inherit;    margin-right: 10px;}
+#irp-calendar-list .irp-icon-pdf .irp-fsize { background-image:url(//irpocket.com/6544/images/icon_pdf.png); background-repeat:no-repeat; background-position:left 3px;padding-left: 20px;}
+
+
+
+@media (max-width: 767px) {
+	#irp-library-category dl {padding: 15px 15px;}
+
+}
+
+
+
+/*電子公告*/
+#irp-disclosure  { margin-top:40px;}
+#irp-disclosure .txt { text-align:left}
+
+
+/*IRについて*/
+.irp_comment { text-align:right; font-size:12px; margin:20px 0 40px}
+.irp_comment a { color:#000}
+
+
+.txtR {text-align:right}
+/*ハイライト*/
+#irp-HiLi { margin-top:40px;}
+#irp-HiLi h2 { text-align:left; font-size: 20px; font-weight: bold;}
+#irp-HiLi h2 span{ font-size: 14px; font-weight:normal; float:right}
+#irp-HiLi:after { content:""; display:block; clear:both}
+#irp-HiLi .Box:nth-child(even) { float:left; width:48%;  margin-bottom:80px;}
+#irp-HiLi .Box:nth-child(odd) { float:right; width:48%; margin-bottom:80px;}
+
+@media screen and (max-width: 768px){
+#irp-HiLi .Box:nth-child(even) { float:none; width:100%;  margin-bottom:80px;}
+#irp-HiLi .Box:nth-child(odd) { float:none; width:100%; margin-bottom:80px;}
+#irp-HiLi img { max-width:100%; }
+}
+.highcharts-button { display:none}
+
+.irp-highlight-table table {margin-bottom:20px; width:100%}
+.irp-highlight-table th { font-size:14px;border:1px solid #BFBFBF;padding:8px 14px; font-weight:normal;text-align:center; background-color:#f7f7f7}
+.irp-highlight-table th.cn {text-align:left; }
+.irp-highlight-table td { font-size:14px;border:1px solid #BFBFBF;padding:8px 14px; text-align:right; vertical-align:middle !important}
+
+#irp-HiLi ul { margin-bottom:40px; border:none}
+#irp-HiLi ul:after { content:""; display:block; clear:both}
+#irp-HiLi li { display:inline; border:none}
+#irp-HiLi li a { display:inline-block; width:33.3%; float:left; line-height:40px;color:#fff; font-size:18px;background-color:#9b9b9b}
+#irp-HiLi li.here a {background-color:#c90017}
+
+@media screen and (max-width: 768px){
+#irp-HiLi li a { display:block; width:100%; float:none;}
+#irp-HiLi li { display:block; border:none; padding:0}
+}
+
+/*株式基本情報*/
+#irp-highlight-table-kabushiki01,
+#irp-highlight-table-kabushiki02 {margin-bottom: 4.5em;}
+#irp-highlight-table-kabushiki01 td.c1,
+#irp-highlight-table-kabushiki01 td.c2,
+#irp-highlight-table-kabushiki02 td.c1,
+#irp-highlight-table-kabushiki02 td.c2 { border-top: 1px solid #888; }
+#irp-highlight-table-kabushiki01 td.c1,
+#irp-highlight-table-kabushiki02 td.c1 { width:20%; background-color: #f0f0f0; min-width: 115px; text-align:left; padding:6px 10px}
+#irp-highlight-table-kabushiki01 td.c2,
+#irp-highlight-table-kabushiki02 td.c2 { text-align: left; line-height: 1.4em; padding-left:20px}
+/*株主構成*/
+table.irp-table { width: 100%; }
+#irp-highlight-table-kabunushi01,
+#irp-highlight-table-kabunushi02 {margin-bottom: 4.5em;}
+#irp-highlight-table-kabunushi02 .r1 td.c1,
+#irp-highlight-table-kabunushi02 .r1 td.c2,
+#irp-highlight-table-kabunushi02 .r1 td.c3 { border-bottom: 1px solid #888; border-top: 1px solid #888; font-size: 13px; padding: 12px; color: #333; font-weight: bold;text-align: center;
+}
+#irp-highlight-table-kabunushi01  td.c1,
+#irp-highlight-table-kabunushi01  td.c2 { border-top: 1px solid #888; border-left: none; border-right: none; text-align: left; padding:6px 10px;}
+#irp-highlight-table-kabunushi02  td { border-bottom:1px solid #efefef; padding:6px 10px}
+#irp-highlight-table-kabunushi02  td.c1 { text-align:left;}
+#irp-highlight-table-kabunushi01  td.c2,
+#irp-highlight-table-kabunushi02  td.c2,
+#irp-highlight-table-kabunushi02  td.c3 { text-align: right;}
+#irp-highlight-table-kabunushi_date { float: right; margin-top: 7px;}
+
+/*コーポレートトップ改修*/
+.disnon { display:none}
+#tab { margin-bottom:30px; border:none}
+#tab:after { content:""; display:block; clear:both}
+#tab li  { display:inline-block; width:25%; float:left; background-color:#9b9b9b; color:#fff; font-size:18px; text-align:center; line-height:40px; border:none; cursor:pointer}
+#tab li.active  { background-color:#c90017; }
+
+.content_wrap li { padding:}
+.content_wrap li:after { content:""; clear:both; display:block;}
+.content_wrap .date { display:inline-block;margin-bottom: 5px;padding: 1em 0 1em 2em; float:left; width:240px;font-size: 1.4rem;}
+.content_wrap .txt { padding: 1em 0;display: inline-block;max-width: 50em;}
+.content_wrap a { display:inline; font-weight:500; padding-right:10px;}
+.content_wrap .irp-cate:after { content:"";font-size: 1.1rem;line-height: 1;top: -5px;width: 95px;padding: 3px 0;text-align: center;color: #fff;display: inline-block; vertical-align:middle;}
+.content_wrap .press2 .date:after {content: "プレスリリース"; background-color: rgb(217, 114, 44);color: rgb(255, 255, 255);font-size: 84%;line-height: 20px;   text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .press .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .press0 .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .tekiji2 .date:after {content: "PRニュース"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .tekiji3 .date:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .sonota .date:after {content: "その他"; background-color: rgb(146, 146, 146); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.content_wrap .irp-fsize.pdf { background-image:url(//irpocket.com/6544/images/icon_pdf.png); background-repeat:no-repeat; background-position:left 3px; display:inline}
+.new-label:after { background-color:#c7000a; color:#fff; content:"NEW";padding: 0.1em 0.5em;font-size:82%; display:inline-block;vertical-align: top;float: right;
+    margin-left: 10px;}
+
+
+@media (max-width: 767px) {
+.content_wrap .date { display:block;margin-bottom: 5px;padding: 1em 0 1em 0em; float:none; width:inherit;font-size: 1.0rem;}
+.content_wrap .txt { padding: 0 0;}
+.content_wrap a { padding-top:0; font-weight:normal}
+
+}
+
+
+/*昇降機*/
+#irp-press-shoko { margin-top:40px;}
+#irp-press-shoko .nendo { display:none}
+#irp-press-shoko .irp-date { display:none}
+.page_index .sec01 #irp-press-shoko  dl dd a { float: none; color: #000000; text-decoration: underline; background-image: none; background-repeat: no-repeat; padding-right: 0; vertical-align: middle; font-size: 17px;}
+#irp-press-shoko .irp-fsize { display:none}
+
+
+
+/*テーブルスクロール調整*/
+
+.lite-table table{
+/*display: block;
+position: relative;
+width: 100%;
+overflow-x:scroll;}
+.lite-table table thead{
+display: block;
+overflow:scroll;*/
+}
+
+.lite-table table tbody{ width: auto;position: relative;overflow-x: inherit;white-space: nowrap;}
+
+.lite-table table thead tr{display: block;width:100%;}
+
+.lite-table table tbody tr{vertical-align: top;}
+
+[class*="tableBlock"] {	clear: both;margin-top: 5px;overflow-x: auto;padding-bottom: 10px;}
+
+[class*="tableBlock"]::-webkit-scrollbar {width: 10px;background: #cccccc;border-radius: 10px;}
+
+[class*="tableBlock"]::-webkit-scrollbar:horizontal {height: 10px;background: #cccccc;border-radius: 10px;}
+
+[class*="tableBlock"]::-webkit-scrollbar-thumb {background: #c7010a;border-radius: 10px;}
+
+[class*="tableBlock"]::-webkit-scrollbar-thumb:horizontal {background: #c7010a;border-radius: 10px;}
+
+
+/*ニュース一覧追加*/
+
+#irp-press-topir  a, #irp-press-prnews  a, #irp-press-other  a { display:inline; font-weight:500; padding-right:10px;}
+#irp-press-topir .irp-fsize.pdf, #irp-press-prnews .irp-fsize.pdf, #irp-press-other .irp-fsize.pdf {
+    background-image: url(//irpocket.com/6544/images/icon_pdf.png);
+    background-repeat: no-repeat;
+    background-position: left 3px;
+    display: inline;
+}
+
+
+.irp-press-list2 .date { display:block;margin-bottom: 5px;}
+.irp-press-list2 .date.ir:after {content: "IR情報"; background-color: rgb(86, 173, 122); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.irp-press-list2 .date.yuho:after {content: "IR情報"; background-color: rgb(86, 173, 122);color: rgb(255, 255, 255);font-size: 84%;line-height: 20px;   text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.irp-press-list2 .date.tanshin:after {content: "決算短信"; background-color: rgb(217, 57, 113); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.irp-press-list2 .date.press2:after {content: "プレスリリース"; background-color: rgb(217, 114, 44); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.irp-press-list2 .date.press:after {content: "適時開示" !important; background-color: rgb(33, 86, 153) !important; color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.irp-press-list2 .date.press0:after {content: "適時開示"; background-color: rgb(33, 86, 153); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+.irp-press-list2 .date.sonota:after {content: "その他"; background-color: rgb(146, 146, 146); color: rgb(255, 255, 255); font-size: 84%; line-height: 20px; text-align: center; width: 95px; display: inline-block; margin-left: 15px;}
+li .txt .irp-fsize.pdf { width:inherit; background-repeat:no-repeat;height: inherit;padding-left: 25px;background-position: left 7px;vertical-align: top;}
+.irp-press-list2 .pdf { background:none; vertical-align:top; height:inherit; width:inherit !important}
+.irp-press-list2 .irp-fsize.pdf { background-image:url(//irpocket.com/6544/images/icon_pdf.png); background-repeat:no-repeat; background-position:left 3px; display:inline}
+.irp-press-list2 .new-label:after  { background-color:#c7000a; color:#fff; content:"NEW";padding: 0.1em 0.5em;font-size:82%; display:inline-block;vertical-align: top;float: right;line-height: 1.5em; margin-left: 10px;margin-top: 6px;}
+
+.irp-press-list2 span.txt.url { height: inherit; width: inherit !important;}
+
+.page_index .sec01 ul.irp-press-list2 li .txt { max-width:715px;}
+
+
+@media (max-width: 767px) {
+.page_index .sec01 .irp-press-list2 li .date { float:none}
+.irp-press-list2 li .txt { margin-left:0 !important}
+.irp-press-list2 .new-label:after { margin-top: 0px;}
+}
+
+
+.news_menu2 { border:none}
+.news_menu2 li { display:inline-block; border:none !important; width:10%}
+.news_menu2 li a { display:inline-block; width:100%; text-align:center;padding: 10px 0; background-color: #777;color: #fff !important; border-right: 1px solid #fff;}
+.news_menu2 li.selected a {background-color: #092B65}
+
+#irp-press-title { font-size: 24px;font-weight: bold; padding: 20px 0; margin-top: 20px; }
+
+@media (max-width: 767px) {
+#irp-press-title { font-size: 18px;margin-left: 20px; }
+.news_menu2 li {width:25%;    padding-left: 0;}
+.news_menu2 li:nth-child(odd) { background-color:inherit !important}
+}
+
+
+
+.page_index .sec01 ul.irp-press-list2#irp-press-list li .txt, .page_index .sec01 ul.irp-press-list2#irp-press-archive li .txt, .page_index .sec01 ul.irp-press-list2#irp-irnews-list li .txt, .page_index .sec01 ul.irp-press-list2#irp-irnews-archive li .txt, .page_index .sec01 ul.irp-press-list2#irp-prnews-list li .txt, .page_index .sec01 ul.irp-press-list2#irp-prnews-archive li .txt, .page_index .sec01 ul.irp-press-list2#irp-other-list li .txt, .page_index .sec01 ul.irp-press-list2#irp-other-archive li .txt { max-width:870px;}

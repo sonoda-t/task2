@@ -1,0 +1,182 @@
+
+$pc: 1366px; // PC
+$pc_footer: 1200px; // footer用
+$pc_content: 1024px; // content用
+$tab: 769px; // タブレット
+$sp_bg: 415px; // スマホbg
+$sp: 375px; // スマホfooter用
+
+@mixin pc {
+  @media print, screen and (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin pc_footer {
+  @media print, screen and (min-width: ($pc_footer)) {
+    @content;
+  }
+}
+@mixin pc_content {
+  @media print, screen and (min-width: ($pc_footer)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media print, screen and (min-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp_bg {
+  @media print, screen and (min-width: $sp_bg) {
+    @content;
+  }
+}
+@mixin sp {
+  @media print, screen and (min-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin keyframes($animation-name: animaton) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+    #container{
+    max-width: 479px;
+    min-width:320px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #container{
+    min-width:400px;
+    }
+    @media screen and (min-width: 720px) and (orientation: portrait) {
+        #container{
+        min-width:700px;
+        }
+        .spTabOnly{
+        display: block;
+        }
+        .spOnly{
+        display: none;
+        }
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    #container{
+    min-width:740px;
+    }
+}
+@media print, screen and (min-width: 959px) and (max-width: 1024px) {
+    #container{
+    min-width:900px;
+    }
+}
+@media print, screen and (min-width: 1025px) {
+    #container{
+        min-width:1000px;
+    }
+}
+@media print, screen and(min-width: 1366px) {
+    #container{
+        min-width:1300px;
+        max-width:100%;
+    }
+}
+
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  -moz-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@mixin opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@include keyframes(opacityAnime){
+  0% {
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+}
+
+@include keyframes(scroll){
+  0% {
+  @include opacity(0);
+  }
+  50% {
+  @include opacity(1);
+  }
+  80% {
+  @include opacity(0);
+  }
+  100% {
+  @include opacity(0);
+  }
+}
+
+@include keyframes(catch){
+  0% {
+  @include opacity(0);
+  }
+  100% {
+  @include opacity(1);
+  }
+}
+
+@include keyframes(visualBg){
+  0% {
+  @include opacity(0);
+  }
+  100% {
+  @include opacity(1);
+  }
+}
+
+@include keyframes(btnWrap){
+	0% {
+	opacity:0;
+	@include transform(scale(0.5));
+	}
+	50% {
+	opacity:1;
+	@include transform(scale(1));
+	}
+	60% {
+	opacity:0.8;
+	@include transform(scale(0.9));
+	}
+	100% {
+	opacity:1;
+	@include transform(scale(1));
+	}
+}

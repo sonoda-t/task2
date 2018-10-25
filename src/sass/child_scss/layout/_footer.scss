@@ -1,0 +1,438 @@
+footer {
+  margin-top: 0;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+
+  .banner {
+    @include tab {
+      animation: opacity 1s ease-out 1s;
+      animation-fill-mode: both;
+    }
+    border-top: #ccc solid 1px;
+    padding: 40px 0px;
+    position: relative;
+    &__wrap {
+      @include tab {
+        margin: 0 auto;
+        max-width: 1366px;
+        overflow: visible;
+      }
+      margin: 0;
+      position: relative;
+      padding: 0;
+      &__slide {
+        margin-bottom: 10px;
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        user-select: none;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+        &__items {
+          @include tab {
+            overflow: visible;
+          }
+          transform: translate3d(0, 0, 0);
+          position: relative;
+          display: block;
+          overflow: hidden;
+          margin: 0;
+          padding: 0px 10%;
+          > li {
+            opacity: 1;
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .contact {
+    @include tab {
+      padding: 70px 10px;
+    }
+    padding: 30px 10px;
+    background: url(../img/contact_bg.jpg) no-repeat 50% top;
+    background-size: cover;
+    margin-bottom: 30px;
+
+    &__header {
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      letter-spacing: .1em;
+      text-indent: -.1em;
+      color: #fff;
+      @include tab {
+        font-size: 1.6rem;
+      }
+      &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.25;
+        @include tab {
+          font-size: 4.4rem;
+        }
+      }
+    }
+
+    &__main {
+      @include tab {
+        display: table;
+        max-width: 1020px;
+        width: 100%;
+      }
+      margin: 15px auto 0;
+      display: block;
+      max-width: 414px;
+
+      a {
+        @include tab {
+          display: table-cell;
+          width: 50%;
+        }
+        text-decoration: none;
+      }
+
+      &__wrap {
+        @include sp {
+          padding: 15px;
+        }
+        @include tab {
+          color: #fff;
+          padding: 30px 10px 40px;
+          transition: 0.2s;
+        }
+        background: #c7000a;
+        color: #fff;
+        padding: 10px;
+        &:hover {
+          background: #ee000c;
+        }
+        &.blue {
+          background: #0066cf;
+          &:hover {
+            background: #007af8;
+          }
+        }
+        p {
+          @include sp {
+            font-size: 1.2rem;
+          }
+          @include tab {
+            font-size: 1.4rem;
+            line-height: 2;
+          }
+          font-size: 1.1rem;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+        &__btn {
+          @include tab {
+            margin: 10px auto 0;
+            max-width: 300px;
+            vertical-align: middle;
+            font-size: 1.8rem;
+          }
+          margin: 10px 0 0;
+          height: 50px;
+          padding: 15px 30px;
+          background: #fff;
+          border: #fff solid 1px;
+          color: #c7000a;
+          &.blue {
+            color: #0066cf;
+          }
+        }
+      }
+    }
+
+    &__number {
+      @include tab {
+        max-width: 1020px;
+        width: 100%;
+      }
+      margin: 0 auto;
+      padding: 15px 0 20px;
+      max-width: 414px;
+      background: #fff;
+      > p {
+        @include tab {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+      > span {
+        @include tab {
+          margin-top: 0;
+          margin-left: 10px;
+          font-size: 5rem;
+          vertical-align: middle;
+          padding-left: 55px;
+        }
+        margin-top: 5px;
+        font-size: 3.2rem;
+        font-style: italic;
+        font-weight: bold;
+        display: inline-block;
+        padding-left: 36px;
+        position: relative;
+        color: #00b2c7;
+        > a {
+          color: #00b2c7;
+          text-decoration: none;
+        }
+        &:before {
+          @include tab {
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+          }
+          content: '';
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -15px;
+          background: url(../img/ic_tel.png) no-repeat 50% top;
+          background-size: contain;
+        }
+      }
+    }
+
+  }
+
+  .menu {
+    @include tab {
+      font-weight: 700;
+    }
+    display: block;
+    background: #092b65;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-align: left;
+    position: relative;
+
+    &__list {
+      @include tab {
+        padding: 60px 0;
+        max-width: 1366px;
+        margin: 0;
+        width: 94%;
+        display: table;
+      }
+      @include pc_footer {
+        max-width: 1200px;
+        width: 90%;
+      }
+
+      &__block {
+        @include tab {
+          padding: 0 2vw 0 2vw;
+          display: table-cell;
+          vertical-align: top;
+          border-right: #2f5698 solid 1px;
+        }
+        @include pc_footer {
+          padding: 0 20px 0 20px;
+        }
+        &:last-child {
+          border-right: none;
+        }
+        position: relative;
+
+        &__inner {
+          @include tab {
+            display: block;
+            background: #092b65;
+          }
+          display: none;
+          background: #113b83;
+          li {
+            @include tab {
+              border-top: none;
+            }
+            position: relative;
+            border-top: #2f5698 solid 1px;
+            .submenu {
+              @include tab {
+                padding: 0.5em 0;
+                font-size: 1.2rem;
+              }
+              padding: 0.5em 1em;
+              display: block;
+              font-size: 1.4rem;
+              background: #092b65;
+            }
+          }
+          &.is-open {
+            display: block;
+          }
+        }
+
+        &__open {
+          @include tab {
+            display: none;
+          }
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 0.5em 0 0.5em 2em;
+          text-align: center;
+          cursor: pointer;
+          font-size: 2rem;
+        }
+      }
+      a:hover {
+        color: #99ddff;
+      }
+    }
+
+    &__text{
+      &__large {
+        @include tab {
+          line-height: 1.25;
+          border-top: none;
+          padding: 1em 0;
+        }
+        border-top: #2f5698 solid 1px;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        &.top {
+          @include tab {
+            background-color: #092b65;
+          }
+          background-color: #444;
+          padding: 1em 0;
+        }
+        &.en {
+          @include tab {
+            display: block;
+          }
+          display: none;
+        }
+      }
+      &__middle{
+        @include tab {
+          padding: 0.6em 0;
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.25;
+        }
+        padding: 1em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+      &__small {
+        @include tab {
+          line-height: 1.25;
+          padding: 0.6em 0 0.6em 1em;
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+        display: block;
+        padding: 1em 1em 1em 2em;
+        color: #fff;
+        text-decoration: none;
+        line-height: 1.25;
+      }
+    }
+
+    &__btn {
+      @include tab {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -30px;
+        width: 50px;
+        height: 63px;
+      }
+      @include pc_footer {
+        right: 50px;
+      }
+      display: none;
+      &:hover {
+        opacity: 0.6;
+      }
+      img {
+        width: 50px;
+        height: 63px;
+      }
+    }
+  }
+
+  .copyright {
+    @include tab {
+      text-align: center;
+    }
+    text-align: left;
+    padding: 20px 0px 40px;
+    position: relative;
+
+    &__logo {
+      @include tab {
+        margin: 0 auto;
+        width: 300px;
+        height: 80px;
+      }
+      margin: 0;
+      width: 202px;
+      height: 60px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__img {
+      @include tab {
+        right: 30px;
+      }
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      margin-top: -40px;
+      img {
+        @include tab {
+          width: 80px;
+        }
+        width: 50px;
+        height: auto;
+      }
+    }
+
+    &__text {
+      @include tab {
+        padding-left: 0px;
+        font-size: 1rem;
+        text-align: center;
+      }
+      padding-left: 10px;
+      letter-spacing: .04em;
+      font-size: 0.9rem;
+      line-height: 1.2;
+      text-align: left;
+    }
+  }
+
+}

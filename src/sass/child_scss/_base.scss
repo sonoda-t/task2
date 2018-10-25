@@ -1,0 +1,118 @@
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@font-face { font-family: 'jes_c'; src: url("../fonts/jes_c.ttf?bjja3j") format("truetype"), url("../fonts/jes_c.woff?bjja3j") format("woff"), url("../fonts/jes_c.svg?bjja3j#jes_c") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Noto Sans Japanese'; font-style: normal; font-weight: 200; src: url(../fonts/NotoSansJP-Light.woff2) format("woff2"), url(../fonts/NotoSansJP-Light.woff) format("woff"), url(../fonts/NotoSansJP-Light.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans Japanese'; font-style: normal; font-weight: 300; src: url(../fonts/NotoSansJP-DemiLight.woff2) format("woff2"), url(../fonts/NotoSansJP-DemiLight.woff) format("woff"), url(../fonts/NotoSansJP-DemiLight.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans Japanese'; font-style: normal; font-weight: 400; src: local("NotoSansJP-Regular.otf"), url(../fonts/NotoSansJP-Regular.woff2) format("woff2"), url(../fonts/NotoSansJP-Regular.woff) format("woff"), url(../fonts/NotoSansJP-Regular.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans Japanese'; font-style: normal; font-weight: 500; src: url(../fonts/NotoSansJP-Medium.woff2) format("woff2"), url(../fonts/NotoSansJP-Medium.woff) format("woff"), url(../fonts/NotoSansJP-Medium.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans Japanese'; font-style: normal; font-weight: 700; src: url(../fonts/NotoSansJP-Bold.woff2) format("woff2"), url(../fonts/NotoSansJP-Bold.woff) format("woff"), url(../fonts/NotoSansJP-Bold.otf) format("opentype"); }
+@font-face { font-family: 'Noto Sans Japanese'; font-style: normal; font-weight: 900; src: url(../fonts/NotoSansJP-Black.woff2) format("woff2"), url(../fonts/NotoSansJP-Black.woff) format("woff"), url(../fonts/NotoSansJP-Black.otf) format("opentype"); }
+
+body { font-family: 'Noto Sans Japanese',"ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , "Meiryo" , "ＭＳ Ｐゴシック" , "MS PGothic" , "sans-serif"; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'jes_c' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-right:before {
+    content: "\e902";
+}
+.icon-open:before {
+    content: "\e906";
+}
+
+.clearFix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(148, 34, 67, 0.2);
+  height: 100%;
+  -ms-touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+body {
+  font-size: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #000;
+  min-height: 100%;
+  background: #fff;
+  position: relative;
+  -webkit-animation: opacityAnime 0.5s ease 0.1s;
+  -moz-animation: opacityAnime 0.5s ease 0.1s;
+  animation: opacityAnime 0.5s ease 0.1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0.2);
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  display: table;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  max-width: 414px;
+}
+
+.icon {
+  font-family: 'jes_c' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:before {
+    content: "\e902";
+  }
+}
