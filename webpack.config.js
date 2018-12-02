@@ -1,56 +1,61 @@
-var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   entry: {
-    style: './src/sass/style.scss',
-    //sub: './src/sass/sub.scss'
+    home: './src/js/home.js',
   },
   output: {
-    path: path.join(__dirname, './public/css'),
-    filename: '[name].css'
+    path: path.join(__dirname, './public'),
+    filename: 'js/[name].js'
   },
   module: {
     rules: [
       {
-
-
         test: /\.scss$/,
-        //loader: ExtractTextPlugin.extract('css-loader!sass-loader')
-          use: ExtractTextPlugin.extract({
-            fallback: "style-loader",
-            use: [
-              // CSSをバンドルするための機能
-              {
-                loader: 'css-loader',
-                options: {
-                  // CSS内のurl()メソッドの取り込みを禁止する
-                  url: false,
-                  // ソースマップの利用有無
-                  sourceMap: true,
-                  // 空白文字やコメントを削除する
-                  minimize: true,
-                  // Sass+PostCSSの場合は2を指定
-                  importLoaders: 2
-                },
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                sourceMap: true,
+                minimize: true,
+                importLoaders: 2
               },
-              // Sassをバンドルするための機能
-              {
-                loader: 'sass-loader',
-                options: {
-                  // ソースマップの利用有無
-                  sourceMap: true,
-                }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  require('autoprefixer')({
+                    browsers: [
+                      'IE >= 11',
+                      'last 2 versions'
+                    ]
+                  })
+                ]
               }
-            ],
-          })
-
-
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+              }
+            }
+          ]
       }
     ]
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'public'),
+    port: 8080,
+    inline: true,
+    watchContentBase: true,
+  },
   plugins: [
-    new ExtractTextPlugin('[name].css')
+    new MiniCssExtractPlugin({
+      filename: 'css/style.css'})
   ],
 }
