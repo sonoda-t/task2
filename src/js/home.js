@@ -1,3 +1,6 @@
+import './child_js/slider_bnr.js';
+import '../sass/style.scss';
+
 $(function() {
 
     $("#tab li").click(function() {
@@ -12,8 +15,8 @@ $(function() {
     var setImg = $('#visualBg');
     var setTxt = $('.sliderMV .slick-slide');
     var viewMax = setImg.children('div').length;
-    $slider2 = $('.sliderMV');
-    $slider2.slick({
+    var slider2 = $('.sliderMV');
+    slider2.slick({
         slidesToShow: 1,
         focusOnSelect: false,
         infinite:true,
